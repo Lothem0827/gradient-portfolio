@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 14px;
+  sborder: solid red 1px;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 9px;
+  }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/external/fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "InterLight";
+  src: url("./assets/external/fonts/Inter-Light.ttf");
+}
+
+@font-face {
+  font-family: "KuboSans";
+  src: url("./assets/external/fonts/KuboSans-Black.otf");
+}
+
+@font-face {
+  font-family: "KuboSansLight";
+  src: url("./assets/external/fonts/KuboSans-ExtraLight.otf");
+}
+
+@layer base {
+  html {
+    font-family: Inter;
+    letter-spacing: -0.04em;
+  }
+}
